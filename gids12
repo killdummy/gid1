@@ -1,0 +1,565 @@
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 60px;
+		align-content: center;
+		font-weight: bold;
+		z-index: 1;
+		position: absolute;
+		margin: 0px auto;
+		margin: center;
+		width: 90%;
+	}
+	header a
+	{
+		list-style: none;
+		text-decoration: none;
+		font-family: "Arial";
+		color: white;
+	}
+	.photo
+	{
+		background-image: url(https://million-wallpapers.ru/wallpapers/0/91/16630835547465107524.jpg);
+		z-index: 0;
+
+	}
+	.bigph
+	{
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 0;
+		background-size: cover;
+		background-position: center;
+	}
+	.header-right ul
+	{
+		list-style: none;
+		padding: 0px;
+		z-index: 1;
+	}
+	.header-right ul li
+	{
+		display: inline-block;
+		margin: 0px 10px;
+		padding: 0px;
+		z-index: 1;
+		border-radius: 5px;
+		background-color: #BDB76B;
+
+	}
+	.header-right 
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 1px;
+		list-style: none;
+		font-size: 30px;
+		float: right;
+		padding: 0px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		z-index: 1;
+		height: 50px;
+	}
+	.header-right a
+	{
+		color: white;
+	}
+	.see
+	{
+		display: flex;
+    	height: 100vh;
+    	width: 100%;
+    	top: 0px;
+    	position: relative;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	overflow: hidden;
+    	margin: 0px;
+	}
+	.logo
+	{
+		background: url(https://images.vexels.com/media/users/3/128930/isolated/preview/1d7ceac996e65f025d69e16ec7f73ddf-travel-badge-by-vexels.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 150px;
+		height: 150px;
+		z-index: 1;
+	}
+	.header-left 
+	{
+		font-size: 45px;
+		padding: 0px;
+		color: white;
+		box-sizing: border-box;
+		width: 150px;
+		text-align: center;
+		border-radius: 5px;
+		z-index: 1;
+		background-image: url("https://yandex.ru/images/search?itype=png&p=3&text=%D0%B3%D0%B8%D0%B4%20%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF&pos=132&rpt=simage&img_url=https%3A%2F%2Fimages.vexels.com%2Fmedia%2Fusers%2F3%2F128930%2Fisolated%2Fpreview%2F1d7ceac996e65f025d69e16ec7f73ddf-travel-badge-by-vexels.png");
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	body
+	{
+		margin: 0 auto;
+		width:100%;
+		background-color: white;
+		color: white;
+		font-family: "ProximaNova-Light";
+	}
+	.first
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+	}
+	.slogan
+	{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		z-index: 1;
+		color: #FFFFFF;
+	}
+	.hello
+	{
+		font-size: 25px;
+		margin-top: 200px;
+		z-index: 1;
+	}
+	.text-center
+	{
+		font-size: 20px;
+		z-index: 1;
+	}
+	.button
+	{
+		width: 170px;
+		height: 50px;
+		border: solid;
+		border-radius: 5px;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+		border-color: #BDB76B;
+		background: #BDB76B;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		margin: 0px auto;
+	}
+	.content
+	{
+		margin: 0px auto;
+		box-sizing: border-box;
+		z-index: 1;
+	}
+	.services
+	{
+		max-width: 1230px;
+		margin: 80px auto 30px auto;
+	}
+	.serv-ul
+	{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+		grid-gap: 30px;
+		padding: 0px 30px;
+		margin: 0px auto;
+		box-sizing: border-box;
+		color: black;
+		list-style: none;
+		text-align: center;
+	}
+	.column
+	{
+		display:flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-family: "Arial";
+		font-size: 15px;
+	}
+	.text-center
+	{
+		font-size: 30px;
+		font-family: "Arial";
+	}
+	.page1-column
+	{
+		background-image: url(http://design2010.ru/Romasights_files/071215.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 270px;
+		height: 200px;
+	}
+	.page2-column
+	{
+		background-image: url(https://static.tonkosti.ru/images/b/b4/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%97%D0%B0%D1%82%D0%B5%D1%80%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%B8%D0%BD%D0%BA%D0%BE%D0%B2%2C_%D0%9F%D0%B5%D1%80%D1%83.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 270px;
+		height: 200px;
+	}
+	.page3-column
+	{
+		background-image: url(https://i.ytimg.com/vi/PRh1NrtmDcY/hqdefault.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 270px;
+		height: 200px;
+	}
+	.page4-column
+	{
+		background-image: url(https://fishki24.ru/wp/wp-content/uploads/2018/10/11004658-900.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 270px;
+		height: 200px;
+	}
+	.proposal
+	{
+		margin-top: 100px;
+		margin: 80px auto 0px auto;
+		max-width: 100%;
+		min-height: 700px;
+		align-items: center;
+	}
+	.text-proposal
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		margin: 0px auto;
+		color: black;
+		font-size: 20px;
+	}
+	.picture
+	{
+		background-image: url(https://social-network.biz/upload/photos/2018/03/WRhgSFEOVM1SObNul1YQ_20_0254db4ca84c6953cf708bee8dd2507e_cover_full.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 700px;
+	}
+	.menu
+	{
+
+		max-width: 1230px;
+		margin: 0px auto;
+		box-sizing: border-box;
+	}
+	.title
+	{
+		display: flex;
+		max-width: 700px;
+		margin: 0px auto;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		color: black;
+		margin-top: 60px;
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+	.amenities
+	{
+		margin-bottom: 40px;
+    	display: grid;
+    	height: 100%;
+    	width: 100%;
+    	grid-gap: 30px;
+    	padding: 0;
+    	grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+	}
+	.image-amenities-ourgid
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(https://www.balbooa.com/demo/images/bagallery/gallery-37/thumbnail/category-1/8.jpg?1518702635);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 370px;
+		height: 237px;
+		position: relative;
+		margin: 0px auto;
+	}
+	.image-amenities-extreme
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(https://i.artfile.me/wallpaper/05-11-2011/650x366/sport-ekstrim-polyol-pryzhok-skala-585746.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 370px;
+		height: 237px;
+		position: relative;
+		margin: 0px auto;
+	}
+	.image-amenities-mute
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(https://pic.rutube.ru/video/dc/0c/dc0c038c691b855e425cabc6af968893.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 370px;
+		height: 237px;
+		position: relative;
+		margin: 0px auto;
+	}
+	.image-amenities-hotel
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(https://housechief.ru/wp-content/uploads/2017/03/12-5-768x512.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 370px;
+		height: 237px;
+		position: relative;
+		margin: 0px auto;
+	}
+	.image-amenities-love
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(https://forevergum.files.wordpress.com/2018/02/tumblr_nv37rx0ril1qb1f7qo1_1280.jpg?w=840);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 370px;
+		height: 237px;
+		position: relative;
+		margin: 0px auto;
+	}
+	.image-amenities-friends
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-image: url(http://ua.today/images/news/2016/%D0%9C%D0%B0%D0%B9/04/11.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 370px;
+		height: 237px;
+		position: relative;
+		margin: 0px auto;
+	}
+	.text-amenities
+	{
+		display: flex;
+		justify-content:flex-start;
+		height: 100px;
+		flex-direction: column;
+		color: black;
+		padding: 10px;
+		width: 370px;
+	}
+	.gid
+	{
+		margin: 0px auto;
+	}
+	.text-art
+	{
+		font-size: 20px;
+	}
+	.head-proposal
+	{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		color: black;
+		margin-bottom: 5px;
+	}
+	.foot
+	{
+		display: flex;
+		align-items: center;
+		max-width: 1230px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		height: 100%;
+		padding: 0 30px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	footer
+	{
+		font-family: "Arial";
+		color: white;
+	}
+	footer ul li
+	{
+		list-style: none;
+		text-decoration: none;
+	}
+	.back-foot
+	{
+		background-color: #808080;
+		height: 111px;
+		width: 100%;
+	}
+	footer a
+	{
+		list-style: none;
+		text-decoration: none;
+		color: white;
+	}
+	.go
+	{
+		width: 65px; 
+		height: 20px;
+		padding: 0px;
+		border-color: white;
+		border-radius: 10px;
+		border: 2px solid white;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		background-color: black;
+		text-align: center;
+	}
+	.go a
+	{
+		list-style: none;
+		text-decoration: none;
+		color: white;
+	}
+	.sec-news
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 1230px;
+		min-height: 650px;
+		margin: 0px auto;
+		box-sizing: border-box;
+		align-items: center;
+		margin-left: 50px;
+	}
+	.news
+	{
+		color: black;
+		max-width: 1230px;
+		margin-top: 30px;
+	}
+	.head-news
+	{
+		display: flex;
+		flex-direction: column;
+		color: black;
+		text-align: center;
+		min-height: 50px;
+		max-width: 1230px;
+		margin-top: 30px;
+		font-size: 20px;
+	}
+	.news-item
+	{
+		display: flex;
+		align-items: flex-start;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	.news-item-jpg1
+	{
+		background: url(https://proturizm.club/upload/resize_cache/iblock/3a1/334_223_2/XTWhAGI38CDIVBHmnWdSVAAgwzc1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0px;
+		margin: 0px;
+		width: 273px;
+		height: 160px; 
+	}
+	.news-item-jpg2
+	{
+		background: url(https://proturizm.club/upload/resize_cache/iblock/7b3/334_223_2/20110715064821791.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0px;
+		margin: 0px;
+		width: 273px;
+		height: 160px; 
+	}
+	.news-item-jpg3
+	{
+		background: url(https://proturizm.club/upload/medialibrary/f70/%D0%BA%D0%B8%D1%82%D0%B0%D0%B9+%D0%B3%D1%83%D0%BB%D1%83%D0%BD%D1%81%D1%8F+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0px;
+		margin: 0px;
+		width: 273px;
+		height: 160px; 
+	}
+	.news-item-text
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		flex-wrap: wrap;
+		padding: 0px 30px 0px 24px;
+		margin-bottom: 10px;
+	}
+	.news-item-text-date
+	{
+		margin-top: 0px;
+		padding: 0px;
+		font-size: 14px;
+		max-width: 1230px;
+		margin-bottom: 10px;
+	}
+	.news-item-text-tittle
+	{
+		margin-top: 0px;
+		padding: 0px;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.news-item-text-body
+	{
+		margin-top: 0px;
+		padding: 0px;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.news-item-text-continue a
+	{
+		color: blue;
+		text-decoration: none;
+	}
+	@media screen and (max-width: 500px)
+	{
+		.header-right{display: none;}
+		.header-left{display: none;}
+		.photo{width: 360px;}
+		.bigph{width: 360px;}
+	} 
