@@ -96,13 +96,16 @@ function draw(){
 	if (rightPressed) {
         player.x += player.speed;
     }
+
     if (leftPressed) {
         player.x -= player.speed;
-    }  
+    } 
+
     if (jumpPressed) {
         player.jumpCount++;
-        player.y = (3 * player.jumpLength * Math.sin(Math.PI * player.jumpCount / player.jumpLength));
-    }   
+        player.y = 200+(3 * player.jumpLength * Math.sin(Math.PI * player.jumpCount / player.jumpLength));
+    } 
+
     if(player.jumpCount > player.jumpLength){
     	player.jumpCount = 0;
     	jumpPressed = false;
