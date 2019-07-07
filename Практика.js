@@ -75,7 +75,7 @@ var player = {
 	health: 100,
 	mana: 100,
 	x: 400,
-	y: 0,
+	y: 350,
 	pW: 150,
 	pH: 150,
 	velX: 0,
@@ -103,12 +103,12 @@ function draw(){
 
     if (jumpPressed) {
         player.jumpCount++;
-        player.y = (3 * player.jumpLength * Math.sin(Math.PI * player.jumpCount / player.jumpLength));
+        player.y = -(3 * player.jumpLength * Math.sin(Math.PI * player.jumpCount / player.jumpLength))+350;
     } 
 
     if(player.jumpCount > player.jumpLength){
     	player.jumpCount = 0;
     	jumpPressed = false;
-    	player.y = 0;
+    	player.y = 350;
 	}
 }
