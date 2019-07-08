@@ -6,8 +6,10 @@ var heroImage = new Image();
 heroImage.src = "https://static2.gamekit.com/i/180/180/upload/16/11/12/99/48/63/994863_.png";
 var mapImage = new Image();
 mapImage.src = "";
+var bulletImage = new Image();
+bulletImage.src = "https://img1.picmix.com/output/stamp/tiny/1/5/2/4/304251_b01df.png";
 var isPlaying;
-
+var bullet = [], timer = 0, bullets = 0, i = 0, j = 0, orientation = 0;
 
 
 var requestAnimFrame =  window.requestAnimationFrame ||
@@ -29,9 +31,11 @@ function init(){
 		switch(event.keyCode){
 			case 39:
 				rightPressed = true;
+				orientation = 0;
 				break;
 			case 37:
 				leftPressed = true;
+				orientation = 1;
 				break;
 			case 38:
 				jumpPressed = true;
@@ -83,9 +87,14 @@ var player = {
 	speed: 8,
 	jumpCount: 0,
 	jumpLength: 50,
-	jumpHeight: 350,
 	draw: function(){
 		ctxMap.drawImage(heroImage, 0, 0, 180, 180, this.x, this.y, this.pW, this.pH);
+	}
+}
+
+var drawBullet = {
+	draw: function(){
+		ctxMap.drawImage(bulletImage, 0, 0, 60, 58, bullet[i].x, bullet[i].y, 50, 50);
 	}
 }
 
@@ -111,4 +120,43 @@ function draw(){
     	jumpPressed = false;
     	player.y = 350;
 	}
+
+	for (i = 0; i < bullet.length; i++){
+        bullet[i].x += bullet[i].move;
+		drawBullet.draw();
+		if ((bullet[i].x > mapWidth) || (bullet[i].x < 0)) bullet.splice(i, 1);
+	}
+
+	timer++;
+
+	if (timer % 12 == 0){
+		bullets = 0;
+	}
+
+	addEventListener("keydown", function(event){
+		switch(event.keyCode){
+			case 32:
+				if (bullets <= 10){
+                    if (orientation == 0){
+                        bullet.push({
+                            x: player.x + player.pW/2,
+                            y: player.y + player.pH/2,
+                            vx: 10,
+                            vy: 0,
+                            move: 10
+                        });
+                    }else {
+                        bullet.push({
+                            x: player.x + player.pW/2,
+                            y: player.y + player.pH/2,
+                            vx: 10,
+                            vy: 0,
+                            move: -10
+                        });
+                    }					
+				bullets += 1;
+				}
+				break;
+		}
+	});
 }
