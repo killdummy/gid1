@@ -1,10 +1,30 @@
 
-	body
-	{
-		background-color: #DCDCDC;
+	#friend{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
-	#canvas{
-		display: block;
-		margin: 30px auto;
-		background-color: white;
+
+	#lexa{
+		display: none;
+	}
+
+	#misha{
+		display: none;
+	}
+
+	#pasha{
+		display: none;
+	}
+
+	#igor{
+		display: none;
+	}
+
+	#anton{
+		display: none;
+	}
+	
+	#olya{
+		display: none;
 	}
